@@ -2,9 +2,10 @@
 HISTFILE=~/.local/state/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 
+fpath+=~/config/zsh/.zfunc
 autoload -Uz compinit promptinit
 compinit
 promptinit
@@ -25,3 +26,5 @@ alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settin
 export PYTHONSTARTUP="/home/spikeyamk/.config/python/pythonrc.py"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+

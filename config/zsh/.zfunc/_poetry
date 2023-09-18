@@ -1,0 +1,1 @@
+poetry completions zsh > ~/.config/zsh/.zfunc/_poetry
