@@ -1,8 +1,8 @@
-" Set shift width to 4 spaces.
 set shiftwidth=4
-
-" Set tab width to 4 columns.
 set tabstop=4
-
-" Use space characters instead of tabs.
 set expandtab
+colorscheme evening
+hi Normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+syntax on
+filetype plugin indent on
